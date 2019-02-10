@@ -39,7 +39,25 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              // This toggles the display of line numbers globally alongside the code.
+              // To use it, add the following line in src/layouts/index.js
+              // right after importing the prism color scheme:
+              //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
+              // Defaults to false.
+              // If you wish to only show line numbers on certain code blocks,
+              // leave false and use the {numberLines: true} syntax below
+              showLineNumbers: false,
+              // If setting this to true, the parser won't handle and highlight inline
+              // code used in markdown i.e. single backtick code like `this`.
+              noInlineHighlight: false,
+            },
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
