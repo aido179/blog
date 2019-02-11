@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[A Tech Blog]]></title><description><![CDATA[Generally creative person.]]></description><link>https://blog.aidanbreen.com/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Feb 2019 11:59:30 GMT</lastBuildDate><item><title><![CDATA[Vivisection of OpenTable widget.]]></title><description><![CDATA[You may be familiar with OpenTable, a service built around restaurant bookings. One of their main features is an embeddable widget that…]]></description><link>https://blog.aidanbreen.com//vivisection-of-opentable-widget/</link><guid isPermaLink="false">https://blog.aidanbreen.com//vivisection-of-opentable-widget/</guid><pubDate>Wed, 06 Feb 2019 12:46:37 GMT</pubDate><content:encoded>&lt;p&gt;You may be familiar with OpenTable, a service built around restaurant bookings. One of their main features is an embeddable widget that restaurants can insert in their website to let patrons reserve a table. Here’s what it looks like in the wild:&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[A Tech Blog]]></title><description><![CDATA[Generally creative person.]]></description><link>https://blog.aidanbreen.com/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Feb 2019 13:27:24 GMT</lastBuildDate><item><title><![CDATA[Vivisection of OpenTable widget.]]></title><description><![CDATA[You may be familiar with OpenTable, a service built around restaurant bookings. One of their main features is an embeddable widget that…]]></description><link>https://blog.aidanbreen.com//vivisection-of-opentable-widget/</link><guid isPermaLink="false">https://blog.aidanbreen.com//vivisection-of-opentable-widget/</guid><pubDate>Wed, 06 Feb 2019 12:46:37 GMT</pubDate><content:encoded>&lt;p&gt;You may be familiar with OpenTable, a service built around restaurant bookings. One of their main features is an embeddable widget that restaurants can insert in their website to let patrons reserve a table. Here’s what it looks like in the wild:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -661,4 +661,93 @@
   &lt;/span&gt;
   
   &lt;/a&gt;
-    &lt;/p&gt;</content:encoded></item></channel></rss>
+    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Zero Dependency HTML templating in 12 lines of Javascript]]></title><description><![CDATA[This is a piece of code I wrote for a previous blog post about writing a Custom Mocha Reporter. I wanted to generate HTML output from a…]]></description><link>https://blog.aidanbreen.com//zero-dep-templating/</link><guid isPermaLink="false">https://blog.aidanbreen.com//zero-dep-templating/</guid><pubDate>Mon, 12 Nov 2018 12:30:37 GMT</pubDate><content:encoded>&lt;p&gt;This is a piece of code I wrote for a previous blog post about writing a Custom Mocha Reporter. I wanted to generate HTML output from a template, but I didn’t need much functionality or an extra dependency. Turns out, it’s not that difficult.&lt;/p&gt;
+&lt;p&gt;Programmatically generating or producing HTML is not rocket science. The typical approach is:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Build a HTML template close to what you want.&lt;/li&gt;
+&lt;li&gt;Identify the variable parts of the template you want to change.&lt;/li&gt;
+&lt;li&gt;Write your code to get the replacement parts.&lt;/li&gt;
+&lt;li&gt;Use a templating engine to load the HTML and replace the variables with the replacement parts.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are loads of templating engines out there. &lt;a href=&quot;https://www.npmjs.com/package/mustache&quot;&gt;Mustache&lt;/a&gt; is one. &lt;a href=&quot;http://tryhandlebarsjs.com/&quot;&gt;Handlebars&lt;/a&gt;, &lt;a href=&quot;http://olado.github.io/doT/index.html&quot;&gt;doT&lt;/a&gt; and &lt;a href=&quot;http://ejs.co/&quot;&gt;EJS&lt;/a&gt; also do the job. They all basically work the same, but they all represent an extra dependency that we don’t need. We’re not doing anything complex here, and I’d rather keep this package with zero dependencies. So build it ourselves.&lt;/p&gt;
+&lt;h2&gt;Regular Expressions&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/62d91f4507912c727b85d8883bd8873c/73742/img1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 33.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAABYElEQVQY0yWQS07DQAyGcysWXIclW1jBERDcoKhiweMAlWBD1QoErWBBaSuaJm2ezSSZTGbymMwrjBLLsn7J/mX7M/KcUso5l7QRUqqibKqat20rlZKq7aNiFaaYScZEwyXjkles1NpYrRPXJxEoE0izvNnYKAixNqjOuYgJl62XO2b6B0o9FeEmT2pgwg2soBH4WYlL14HwAH374PyaCNVCqdE2mXrZyWj5bKdlkwAMQAbs2EIkM/1NnIOCEcP5Xiwe7t3JePn0GHy87cavGar1ztOX9fHd7Gj4eTE29ROT9+n52fnwdjgYDK6vbuZfc6qosfpxoRcmMUFZFcfEMkF/dlhQC9WXk+0sJIQmZmzmGHmpA3HqZe4e7mCVGhBRRPjWRoeo8ANs7VAECiFkj4o0QldQRPrItE72yIY0dfO9gzqz5sy5aDrUOrVNV01Ldcx63pqzbjLBeqFTKI1F/QPTKH8iCGL4ugAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Figure 1: word replacement.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/62d91f4507912c727b85d8883bd8873c/40fad/img1.png&quot;
+        srcset=&quot;/static/62d91f4507912c727b85d8883bd8873c/707e9/img1.png 148w,
+/static/62d91f4507912c727b85d8883bd8873c/649e0/img1.png 295w,
+/static/62d91f4507912c727b85d8883bd8873c/40fad/img1.png 590w,
+/static/62d91f4507912c727b85d8883bd8873c/73742/img1.png 600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Artists impression of a lake surrounded by red cabbage and carrots fields.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Regular expressions (regex) are a &lt;strong&gt;wonderful, powerful and complex&lt;/strong&gt; concept that I wont get into in too much detail. Basically, a regular expression allows you to define an “expression”, or pattern, that can be used to find specific sequences in a body of text. A common use of regex is to find a substring, and replace it. Regex can also be used to validate data, ensuring it conforms to some structure (ie. phone numbers contain only numbers and are 10 digits long)&lt;/p&gt;
+&lt;h2&gt;Replacing a String.&lt;/h2&gt;
+&lt;p&gt;Regex are not unique to Javascript, and even within JS, there are multiple ways to utilise them. In our case, we’ll use the &lt;code class=&quot;language-text&quot;&gt;string.replace()&lt;/code&gt; method. (&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace&quot;&gt;full documentation here&lt;/a&gt;)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;str.replace(regexp|substr, newSubstr|function)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We’re going to take a string called &lt;code class=&quot;language-text&quot;&gt;template&lt;/code&gt; and find every occurrence of words surrounded by double squiggly brackets like so: &lt;code class=&quot;language-text&quot;&gt;{{word}}&lt;/code&gt; . Then we’re going to replace that word with a value we have generated — in the case of the Mocha reporter, we used the output of our tests, but it can be anything at all.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For example&lt;/strong&gt;, say we have calculated the percent of tests that ran successfully as: run&lt;em&gt;percent , and in our template we have written `&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;{{run&lt;/em&gt;percent}}`&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;. We could write:  &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;template.replace(/{{run_precent}}/g, run_percent)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Creating_a_regular_expression&quot;&gt;regex literal&lt;/a&gt; is surrounded by forward slashes. The ‘g’ means &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/global&quot;&gt;search globally&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Replacing Multiple Strings&lt;/h2&gt;
+&lt;p&gt;But we can do better. We can find any word surrounded by squigglies with the following regex: &lt;code class=&quot;language-text&quot;&gt;/{{.*?}}/g&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt; means any character except a newline.&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt; means match the previous thing 0 or more times.&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;?&lt;/code&gt; means make the previous thing ‘non-greedy’ — ie. The shortest possible match.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Finally, we’re not just going to replace every word in squigglies with just one value. If we pass a function as the second parameter to &lt;code class=&quot;language-text&quot;&gt;replace()&lt;/code&gt;, we can be much smarter…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; newContent &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; template&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;/{{.*?}}/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;match&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; replacements&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;match&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here,Match is the word that is found by the regex. replacements is an object with keys for each of our template variables (the squigglies), and values for what we want to replace them with. Here’s an example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Example of replacements object&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token string&quot;&gt;&quot;{{lastrun_date}}&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token string&quot;&gt;&quot;{{run_percent}}&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; run_percent&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token string&quot;&gt;&quot;{{run_numerator}}&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; sum&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token string&quot;&gt;&quot;{{run_denominator}}&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; total
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Wrapping it all up with the file reading/writing code in a nice little function (called updateBillboard in our reporter) and we have our templating engine in &lt;a href=&quot;https://github.com/aido179/apb-mocha-reporter/blob/140e22119925142dd2d09bd22dd62764bbd46799/src/apbmochareporter.js#L91&quot;&gt;12 lines of Javascript&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;updateBillboard&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;replacements&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+  content &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fs&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;readFileSync&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`template.html`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;encoding&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;utf8&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; newContent &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; content&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;/{{.*?}}/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;match&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; replacements&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;match&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; output&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`/output.html`&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;fs&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;existsSync&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;output_dir&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    fs&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;mkdirSync&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;output_dir&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  fs&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;writeFileSync&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;output&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; newContent&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; output
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Obviously, this isn’t going to be suitable for anything with complex templating needs. But, in my opinion, installing a whole extra package just to replace a few values in a file is overkill.&lt;/p&gt;</content:encoded></item></channel></rss>
