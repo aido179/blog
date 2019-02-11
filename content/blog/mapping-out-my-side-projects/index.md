@@ -2,7 +2,6 @@
 title: Mapping out my side projects
 date: "2018-12-07T12:30:37.000Z"
 ---
-qwertyuiop
 It turns out there’s a lot to learn by examining the cadence and variety of your side-projects…
 
 ![Figure 1: Projects over time.](./screenshot1.png)
