@@ -47,6 +47,9 @@ pre[class*="language-"] {
 	padding: .1em;
 	border-radius: .3em;
 	white-space: normal;
+  color: #333;
+  background-color: #e2e2e2;
+  text-shadow: none;
 }
 
 .token.comment,
