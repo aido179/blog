@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[A Tech Blog]]></title><description><![CDATA[Generally creative person.]]></description><link>https://blog.aidanbreen.com/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Feb 2019 08:50:57 GMT</lastBuildDate><item><title><![CDATA[Vivisection of OpenTable widget.]]></title><description><![CDATA[You may be familiar with OpenTable, a service built around restaurant bookings. One of their main features is an embeddable widget that…]]></description><link>https://blog.aidanbreen.com//vivisection-of-opentable-widget/</link><guid isPermaLink="false">https://blog.aidanbreen.com//vivisection-of-opentable-widget/</guid><pubDate>Wed, 06 Feb 2019 12:46:37 GMT</pubDate><content:encoded>&lt;p&gt;You may be familiar with OpenTable, a service built around restaurant bookings. One of their main features is an embeddable widget that restaurants can insert in their website to let patrons reserve a table. Here’s what it looks like in the wild:&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[A Tech Blog]]></title><description><![CDATA[Generally creative person.]]></description><link>https://blog.aidanbreen.com/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Feb 2019 09:43:54 GMT</lastBuildDate><item><title><![CDATA[Vivisection of OpenTable widget.]]></title><description><![CDATA[You may be familiar with OpenTable, a service built around restaurant bookings. One of their main features is an embeddable widget that…]]></description><link>https://blog.aidanbreen.com//vivisection-of-opentable-widget/</link><guid isPermaLink="false">https://blog.aidanbreen.com//vivisection-of-opentable-widget/</guid><pubDate>Wed, 06 Feb 2019 12:46:37 GMT</pubDate><content:encoded>&lt;p&gt;You may be familiar with OpenTable, a service built around restaurant bookings. One of their main features is an embeddable widget that restaurants can insert in their website to let patrons reserve a table. Here’s what it looks like in the wild:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -357,4 +357,84 @@
 &lt;p&gt;“Most software applications consist of the same basic functions in different configurations”.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Let’s play with that. Imagine a super-high-level language that could describe a software application tersely, but still capture the usefulness of the application.&lt;/p&gt;
-&lt;h2&gt;✏️ Our app&lt;/h2&gt;</content:encoded></item></channel></rss>
+&lt;h2&gt;✏️ Our app&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Example 1&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;App&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Twitter
+  Allow user to&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; login
+  Allow user to&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; send a tweet
+  Allow user to&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; follow another user
+  Allow user to&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; view a timeline of tweets&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://gist.github.com/aido179/1734bb23182d801f4db3b3e694d54a63&quot;&gt;&lt;em&gt;further examples here&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Our app needs a name, we’ll use Twitter as an example.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;login&lt;/code&gt; is pretty self explanatory and so common that we can assume it’s baked into the language. &lt;code class=&quot;language-text&quot;&gt;login&lt;/code&gt; becomes &lt;code class=&quot;language-text&quot;&gt;library.login&lt;/code&gt; indicating we will use provided library behaviour and not a custom implementation.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;send a tweet&lt;/code&gt; is a unique instance of a very common action: take some user input (data: text, image, video, audio etc) and store it somewhere (write), so it can be returned (read) later. We can specify all that in more detail later. For now, let’s imagine &lt;code class=&quot;language-text&quot;&gt;send a tweet&lt;/code&gt; just references further configuration somewhere else, and becomes &lt;code class=&quot;language-text&quot;&gt;custom.tweet&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;follow another user&lt;/code&gt; again, a unique name for a common action: make a link, connection or relationship between two things, in this case, users of our app. In the case of twitter, the follower-to-followed relationship is &lt;strong&gt;many-to-one&lt;/strong&gt;. The Facebook friend-to-friend relationship is &lt;strong&gt;one-to-one&lt;/strong&gt;. On reddit, user-to-subreddit subscriptions are &lt;strong&gt;one-to-many&lt;/strong&gt;. &lt;code class=&quot;language-text&quot;&gt;follow another user&lt;/code&gt; becomes &lt;code class=&quot;language-text&quot;&gt;custom.follow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;view a timeline of tweets&lt;/code&gt; is a read action. It’s going to get some set of things, arrange them somehow and display them to the user. It will probably have nested actions, like liking, retweeting and replying but we’ll handle that later. It becomes &lt;code class=&quot;language-text&quot;&gt;custom.timeline&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ok, let’s iterate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 2&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;App&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Twitter
+  Allow user to&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; library.login
+  Allow user to&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; custom.tweet
+  Allow user to&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; custom.follow
+  Allow user to&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; custom.timeline&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Each &lt;code class=&quot;language-text&quot;&gt;allow user to&lt;/code&gt; line corresponds to a function of the app, but may include multiple UI components. &lt;code class=&quot;language-text&quot;&gt;Library.login&lt;/code&gt; will obviously require a login page, a logout button somewhere else and other elements to update passwords and other information. &lt;code class=&quot;language-text&quot;&gt;custom.follow&lt;/code&gt; might appear in multiple places throughout the app.&lt;/p&gt;
+&lt;h2&gt;🌇 Structure and views&lt;/h2&gt;
+&lt;p&gt;It probably makes sense then to define the structure of the app separately, but with reference to the previously defined actions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 3&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;App&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Twitter
+  &lt;span class=&quot;token key atrule&quot;&gt;Actions&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;#Allow the user do these...&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; library.login
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; custom.tweet
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; custom.follow
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; custom.timeline
+  &lt;span class=&quot;token key atrule&quot;&gt;Views&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# Allow the user to view these&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; library.landingPage
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; custom.home
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; custom.profile&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here I’ve split the app into &lt;code class=&quot;language-text&quot;&gt;Actions&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;Views&lt;/code&gt;. We’ll consider the first view in the list (library.landingPage) to be the default or index. Again, using library means it’s built in. Allowing us to use default boilerplate like this should help speed up development. We can always come back later and use a custom view instead.&lt;/p&gt;
+&lt;h2&gt;🔗 Views and Actions&lt;/h2&gt;
+&lt;p&gt;Mapping actions to parts of our application structure is not trivial. Some pages will have specific actions, and some actions will be reused in many views. Each view should define exactly the actions it needs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 4&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;App&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Twitter
+  &lt;span class=&quot;token key atrule&quot;&gt;Actions&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;#Allow the user do these...&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; library.login
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; custom.tweet
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; custom.follow
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; custom.timeline
+  &lt;span class=&quot;token key atrule&quot;&gt;Views&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# Allow the user to view these&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; library.landingPage
+        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; library.login
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; custom.home
+        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; library.login.isUserloggedIn
+        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; custom.tweet
+        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; custom.timeline
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; custom.profile
+        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; library.login.isUserloggedIn
+        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; custom.follow&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now views have specific actions. We can now have functionality, with the added bonus that is totally clear what happens in each view.&lt;/p&gt;
+&lt;p&gt;Notice how &lt;code class=&quot;language-text&quot;&gt;library.login&lt;/code&gt; is used in each view. The &lt;code class=&quot;language-text&quot;&gt;library.login&lt;/code&gt; action is like a package with many nested functions. We should be able to use specific parts of an action like this — where we don’t need to let the user login on each page, but only check that they are logged in.&lt;/p&gt;
+&lt;h2&gt;🗣️ Discussion&lt;/h2&gt;
+&lt;p&gt;It is conceivable that a configuration like this could be used to generate all the necessary boilerplate for an application. At this point, the application could be generated for any platform too.&lt;/p&gt;
+&lt;p&gt;None of this is necessarily new. &lt;a href=&quot;https://www.meteor.com/&quot;&gt;Meteor&lt;/a&gt; provides default app generation, boilerplate login functionality, and client-server comms. &lt;a href=&quot;https://reactjs.org/&quot;&gt;React&lt;/a&gt; has &lt;a href=&quot;https://github.com/facebook/create-react-app&quot;&gt;create-react-app&lt;/a&gt; which…creates a React app for you. The &lt;a href=&quot;https://cli.vuejs.org/guide/creating-a-project.html&quot;&gt;Vue CLI&lt;/a&gt; create command will scaffold your app. In fact, tools like &lt;a href=&quot;https://yeoman.io/&quot;&gt;Yeoman&lt;/a&gt; literally allows you to define a ‘generator’ and spit out a scaffolded application. Further, &lt;a href=&quot;https://facebook.github.io/react-native/&quot;&gt;React Native&lt;/a&gt; takes a JavaScript project (basically a highly featured configuration) and generates native applications, similar to &lt;a href=&quot;https://cordova.apache.org/&quot;&gt;Cordova&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Code generation is not new. So what’s different here?&lt;/p&gt;
+&lt;p&gt;In the case of Yeoman, &lt;em&gt;create-react-app&lt;/em&gt; and the VUE &lt;em&gt;create&lt;/em&gt; command, once the scaffolding is generated, it’s all up to you. You are left with standard application code and development continues as normal. What I propose here is a tight coupling where the &lt;strong&gt;configuration becomes the application&lt;/strong&gt;, not just a blueprint. That is, if you change the configuration at any time, the code will be updated to reflect that change. Write code that conflicts with the configuration, you get errors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A developer should be able to look at the configuration and know that the application strictly conforms to that definition.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the case of Meteor, with it’s highly functional login boilerplate and client-server comms (pub/sub), (which I think is wonderful, by the way) this goes a step further. User authentication and login is not a convenient package that happens to work quite well — it should be baked in to the very core of the system. With Meteor, the developer still needs to write templates that show/hide content or routes based on the users logged in state. This is silly. At best, it is inconvenient and leads to template overhead. At worst, it is a security risk when, though accident or inexperience, a developer does not handle authentication correctly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It should be impossible to create insecure apps!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When a view is defined like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;Views&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; custom.home
+        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; library.login.isUserloggedIn
+        &lt;span class=&quot;token punctuation&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;There should be nothing else to do. If the user isn’t properly authenticated, it isn’t accessible. That’s it. No fiddling with client side routers, entry events, or app-wide templates or anything else. The config is God. The config wins.&lt;/p&gt;
+&lt;p&gt;Finally, (for now) there are massive benefits when it comes to deployment and maintenance. Deterministic configurations should provide reliable deployments, and make dependency management easy. Imagine an app you built 5 years ago using library.login: you should be able to trust that a new deployment will include up-to-date authentication code — because your app will be generated using the standard configuration, it is always backwards compatible. Even if massive high level changes need to be made, as long as you use &lt;code class=&quot;language-text&quot;&gt;library.login.isUserloggedIn&lt;/code&gt;, your view will be protected on a higher level by the generated app code.&lt;/p&gt;
+&lt;h2&gt;🎬 Conclusion&lt;/h2&gt;
+&lt;p&gt;I know I am being incredibly idealistic here. I’m certain that there are edge cases and complications that make this completely impractical for some purposes. But this isn’t supposed to be a panacea. It’s supposed to work for the 90% of applications that need to make CRUD operations protected by user authentication.&lt;/p&gt;
+&lt;p&gt;But it’s fun to dream.&lt;/p&gt;</content:encoded></item></channel></rss>
