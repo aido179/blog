@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[A Tech Blog]]></title><description><![CDATA[Generally creative person.]]></description><link>https://blog.aidanbreen.com/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Feb 2019 09:43:54 GMT</lastBuildDate><item><title><![CDATA[Vivisection of OpenTable widget.]]></title><description><![CDATA[You may be familiar with OpenTable, a service built around restaurant bookings. One of their main features is an embeddable widget that…]]></description><link>https://blog.aidanbreen.com//vivisection-of-opentable-widget/</link><guid isPermaLink="false">https://blog.aidanbreen.com//vivisection-of-opentable-widget/</guid><pubDate>Wed, 06 Feb 2019 12:46:37 GMT</pubDate><content:encoded>&lt;p&gt;You may be familiar with OpenTable, a service built around restaurant bookings. One of their main features is an embeddable widget that restaurants can insert in their website to let patrons reserve a table. Here’s what it looks like in the wild:&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[A Tech Blog]]></title><description><![CDATA[Generally creative person.]]></description><link>https://blog.aidanbreen.com/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Feb 2019 11:59:30 GMT</lastBuildDate><item><title><![CDATA[Vivisection of OpenTable widget.]]></title><description><![CDATA[You may be familiar with OpenTable, a service built around restaurant bookings. One of their main features is an embeddable widget that…]]></description><link>https://blog.aidanbreen.com//vivisection-of-opentable-widget/</link><guid isPermaLink="false">https://blog.aidanbreen.com//vivisection-of-opentable-widget/</guid><pubDate>Wed, 06 Feb 2019 12:46:37 GMT</pubDate><content:encoded>&lt;p&gt;You may be familiar with OpenTable, a service built around restaurant bookings. One of their main features is an embeddable widget that restaurants can insert in their website to let patrons reserve a table. Here’s what it looks like in the wild:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -437,4 +437,228 @@
 &lt;p&gt;Finally, (for now) there are massive benefits when it comes to deployment and maintenance. Deterministic configurations should provide reliable deployments, and make dependency management easy. Imagine an app you built 5 years ago using library.login: you should be able to trust that a new deployment will include up-to-date authentication code — because your app will be generated using the standard configuration, it is always backwards compatible. Even if massive high level changes need to be made, as long as you use &lt;code class=&quot;language-text&quot;&gt;library.login.isUserloggedIn&lt;/code&gt;, your view will be protected on a higher level by the generated app code.&lt;/p&gt;
 &lt;h2&gt;🎬 Conclusion&lt;/h2&gt;
 &lt;p&gt;I know I am being incredibly idealistic here. I’m certain that there are edge cases and complications that make this completely impractical for some purposes. But this isn’t supposed to be a panacea. It’s supposed to work for the 90% of applications that need to make CRUD operations protected by user authentication.&lt;/p&gt;
-&lt;p&gt;But it’s fun to dream.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;But it’s fun to dream.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Mapping out my side projects]]></title><description><![CDATA[It turns out there’s a lot to learn by examining the cadence and variety of your side-projects… Figure 1: Projects over time. Check out the…]]></description><link>https://blog.aidanbreen.com//mapping-out-my-side-projects/</link><guid isPermaLink="false">https://blog.aidanbreen.com//mapping-out-my-side-projects/</guid><pubDate>Fri, 07 Dec 2018 12:30:37 GMT</pubDate><content:encoded>&lt;p&gt;It turns out there’s a lot to learn by examining the cadence and variety of your side-projects…&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e397273e05132c62d42188dd0130165c/506ed/screenshot1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 28.759894459102902%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsSAAALEgHS3X78AAABMklEQVQY01WQ606DQBCFef8XM7FG4w3oymWBLdClVNtCubafg9GoP76cnZlk58xxbBawiZ553wRYYbdgfMrM5VCGvBce5ypkn/s0NuBYKj4Kn3bpiZ6riFpmp21Aa0OcoWuZhLFraI5H6ipjv1XsCoXy7gmCNXHsk+o1RpZn6cKb1J7gk4ia1GcjZImHM44TwzfjNDHPV6YLTKLNeSSvB3K7R6lHnp9u8L0Vav2AqyL8QJMkmtzElEXKxujlw5G/DMOiwxfTNHK9yKK+5dw27G1BZUJOcoVJDO6rIgpiwqgQdzmFKXG6ruOHvu9o2p7/vV4YxPnMFRDzzBe5Yr7QyaztBsyu4TGyrIsWx1rLX6rq913XNUfJ9XA4oLWWs5XkGaMXdCz5adI0obIlrvvC6u6WT8BawNoQQrjFAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Figure 1: Projects over time.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/e397273e05132c62d42188dd0130165c/40fad/screenshot1.png&quot;
+        srcset=&quot;/static/e397273e05132c62d42188dd0130165c/707e9/screenshot1.png 148w,
+/static/e397273e05132c62d42188dd0130165c/649e0/screenshot1.png 295w,
+/static/e397273e05132c62d42188dd0130165c/40fad/screenshot1.png 590w,
+/static/e397273e05132c62d42188dd0130165c/b3fef/screenshot1.png 885w,
+/static/e397273e05132c62d42188dd0130165c/301c0/screenshot1.png 1180w,
+/static/e397273e05132c62d42188dd0130165c/506ed/screenshot1.png 1516w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Figure 1: Projects over time. Check out the original &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1SAovFyvcWUSptHiIF_4OrJ-IUCxL6fPWg1O7IWKYkrI/edit?usp=sharing&quot;&gt;spreadsheet here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I recently defended my PhD and in the process of preparing for the defence, I discovered that an old backup hard-drive was damaged beyond repair. Thankfully I had a further backup, but it got me thinking:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There’s a lot of stuff here that I probably will never look at again, but it’s important to me that I recognise it’s existence.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I hope I never have to look back at the PHP I wrote when I was learning, but I spent months cobbling together SQL queries and designing objectively terrible pages, and that process is important, at least to me.&lt;/p&gt;
+&lt;p&gt;Then I thought:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I’ve shared a lot of this stuff over the years, I wonder how many people have seen the stuff I’ve made?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The projects I could find hard data for include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Original Music&lt;/li&gt;
+&lt;li&gt;6 Websites&lt;/li&gt;
+&lt;li&gt;3 Youtube Channels&lt;/li&gt;
+&lt;li&gt;3 Chrome Extensions&lt;/li&gt;
+&lt;li&gt;2 SAAS platforms&lt;/li&gt;
+&lt;li&gt;A physical product&lt;/li&gt;
+&lt;li&gt;and this blog.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3e3ca8c13b3be2dec953358d28a37f8a/09ba5/screenshot2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 38.31858407079646%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABh0lEQVQoz0VR2U7CUBDt/3+ETz76YmJQ32gi0cQFKWKhlJaUQuF2odCydPPImaQ6ycksuXPumRltMe4jCxxkq9nFz5DGIfLDAUmSwPd9geM4WC6XEsdxjDRNxbPGuCgKnE4ngdbrXMF+vcVqeI+lcQfLmiBJc1TlGYvFQhpI7rqu5Gxqa1VVIcsylGUpqOsa2r3ex/tEoT+N8GEpGHaEMD3jXP5gvQ6w3++x3W5h2zY2m400kYyg7XY7IaWnUq33dAdj0MXMfsPceYfl+tgfKjRNgyAI5CEVzedzydlEMo7cElI1TRQ+P1zD0G/gvHXg9TswTQsqLYCfBp7niUI2c2TuLM9zIWkJWeM71ihC6+ldjEcjmMMhvo0BxlMP6+SMoqxlxDAMZaQoiiQ/XA52PB5FNY0xVf/t8LGr4+XzE6OZje8LDFthFReo6kaOwP1F0b9CjscP2h3S8w3VCaH+YWLgKnx5yQUxJn6GqX9EfqoQhQoqzrAKcwxNB0opIWmPQCNZOy4JfwFq8VVeBwusBAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Figure 2: Project data.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/3e3ca8c13b3be2dec953358d28a37f8a/40fad/screenshot2.png&quot;
+        srcset=&quot;/static/3e3ca8c13b3be2dec953358d28a37f8a/707e9/screenshot2.png 148w,
+/static/3e3ca8c13b3be2dec953358d28a37f8a/649e0/screenshot2.png 295w,
+/static/3e3ca8c13b3be2dec953358d28a37f8a/40fad/screenshot2.png 590w,
+/static/3e3ca8c13b3be2dec953358d28a37f8a/b3fef/screenshot2.png 885w,
+/static/3e3ca8c13b3be2dec953358d28a37f8a/301c0/screenshot2.png 1180w,
+/static/3e3ca8c13b3be2dec953358d28a37f8a/b5a53/screenshot2.png 1770w,
+/static/3e3ca8c13b3be2dec953358d28a37f8a/09ba5/screenshot2.png 2260w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Figure 2: Project data. Again, from the &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1SAovFyvcWUSptHiIF_4OrJ-IUCxL6fPWg1O7IWKYkrI/edit?usp=sharing&quot;&gt;spreadsheet here&lt;/a&gt; here. Links included, where possible&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Findings&lt;/h2&gt;
+&lt;p&gt;I decided to go back as far as 2010, around about when I started my undergraduate degree, and when I started creating meaningful things that could be shared on the internet.&lt;/p&gt;
+&lt;h3&gt;Relatively steady cadence&lt;/h3&gt;
+&lt;p&gt;Figure 1 above shows pretty clearly that from 2012, I tended to start between 2 and 4 projects a year. There are some gaps (June 2015 — August 2016), and some times where I start a few projects close together (Early 2018), but overall, there’s never really a time where I don’t have a project to work on.&lt;/p&gt;
+&lt;h3&gt;Blog posts come in spurts&lt;/h3&gt;
+&lt;p&gt;The black bordered cells in Figure one indicate that at least 1 blog post was made that month. They tend to happen together, with large gaps in between. Obviously, I’ve begun to write more frequently lately. I think I also tend to write when I’m in need of a quick win: it’s a goal I can achieve in about a day or less and consider complete.&lt;/p&gt;
+&lt;h3&gt;Newer projects are less viral&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d319fc9a4c07018c0fb1dac6da2b80e8/bf197/screenshot3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 61.79401993355482%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAABqUlEQVQoz5VT22oUQRCdr/dNETGgQnzQD9AXjUpEQQTB10AQiZvNzCbZ7Fx2btuXqe6TqtrMjojBWHA41RdOna7uTvq+R1VVWK/XqOtaeRgGeD8o/y8SEVwul2jbFpILhxAARMQYNY8xKN+GaV9E4r2/EZhCFo4XBDfEnfBdoYLijIh2FYkCHr+3qDpiQR6HLUL4t1MVHF2GsK0igk8/WtSb6ejC4/rfsBN0zqnD0dnIz1jwqiYcpQOMC1g1dKdeqkO5HQpx7KDm+58csiJg/7NDyvycWeI2l+O8OmzaTnv17afHZUV49d3h/huLNCe8+OIwuyI8ObRca3Ij+2WsjG1rBIkfSCsvSsLDA4O9D4bZ4sFbw64sHr0zeMmi914bHB55zFeErz/4nVJE3Qc03OeyCzhZkrYmkeNKhfmiwCljfl5xvlL8SnOcnct8idMs57kc2UWJWSbMuCyQXuS6d5YVcJ6QyHMxxqBr+ZdUBUzfwmw6dF2DnlEWK2XvDAZvEWhAVea8p0dTr2HNBm1T65qEOhyv3avbKcafs302vz18hrVWjfz5Ia4BXzie6/1jF7UAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Figure 3&quot;
+        title=&quot;&quot;
+        src=&quot;/static/d319fc9a4c07018c0fb1dac6da2b80e8/40fad/screenshot3.png&quot;
+        srcset=&quot;/static/d319fc9a4c07018c0fb1dac6da2b80e8/707e9/screenshot3.png 148w,
+/static/d319fc9a4c07018c0fb1dac6da2b80e8/649e0/screenshot3.png 295w,
+/static/d319fc9a4c07018c0fb1dac6da2b80e8/40fad/screenshot3.png 590w,
+/static/d319fc9a4c07018c0fb1dac6da2b80e8/b3fef/screenshot3.png 885w,
+/static/d319fc9a4c07018c0fb1dac6da2b80e8/301c0/screenshot3.png 1180w,
+/static/d319fc9a4c07018c0fb1dac6da2b80e8/bf197/screenshot3.png 1204w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Left to right: oldest to newest. We should disregard Medium (where this post was originally published) here as new posts were added over time.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Obviously, older projects are going to have more views, but we would expect the decrease in lifetime views to be somewhat linear. In actual fact, my newer project don’t seem to get anything like the kind of exposure that my older projects got.&lt;/p&gt;
+&lt;p&gt;I think this might be due to my focus changing from &lt;strong&gt;viral content&lt;/strong&gt; (“&lt;a href=&quot;http://blogify.org/&quot;&gt;blogify 2&lt;/a&gt;” was designed to copy content from reddit and repost the links), to actual &lt;strong&gt;useful tools&lt;/strong&gt; (“&lt;a href=&quot;http://bluespots.app/&quot;&gt;Blue Spots Parking&lt;/a&gt;” is an app to help disabled drivers find accessible parking spaces). Making useful tools that also gain viral traction is a sweet spot I have not yet managed to find.&lt;/p&gt;
+&lt;p&gt;But perhaps this is also a reflection on how social networks are becoming less effective. Reddit, Facebook and twitter have always been the main way I share my projects.&lt;/p&gt;
+&lt;h3&gt;Views are not correlated to revenue.&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a8b10e7ab2d3f09b74894d4885d2f5d5/97886/screenshot4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.95142378559465%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABnklEQVQoz5VS20oDMRDdf/VT/AQRwWdRQURfRfBJ64WKongparVq1S3tbjax22ZzOWYyW1tfRAeyM2QnZ87MmaSqKuR5DikliqKIvixL/MecB7znODHGREACGw6HUEpFQOfcn461jiDjcQE5IVQf4P2kRG2Tu98OAZDddC3eMscM6UNt0/GzFf2UhbHsvf/JrjKU67HW0Di8q2KcTMCstbCxosd+q0I7tTG2jh8RmDY/QY3lf5vHGs0HwwxpdqPRiAEtA67sa5y2TYzp4UEokAqL9cb4+26W4XZT4+S+BhRCRBFIHFO3u3Gkcf5k6kE7LOyM8ZgaLO2O4x2NZZJ7924wvzXCRYcJJKQqtcxCsCCrjQpnT+5boMVdjU7fRz+7KmR7VxZzyyWuuzOikNHKRLZDhdvnAi8fAkqKuE7XHYV0IHHZLpALGXeVcmX4//IhcdJSeE0FnDUMSO1SQpqmGGQZPpVAnvVj3Ov1oIosPC4wLnnpKY92N8vykBv2Vw6Cl1OGLIiN4vB68B5qrUOhPPh6JHU3RIDyqSt+Px3PF27TUvl2UYAyAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Figure 4&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a8b10e7ab2d3f09b74894d4885d2f5d5/40fad/screenshot4.png&quot;
+        srcset=&quot;/static/a8b10e7ab2d3f09b74894d4885d2f5d5/707e9/screenshot4.png 148w,
+/static/a8b10e7ab2d3f09b74894d4885d2f5d5/649e0/screenshot4.png 295w,
+/static/a8b10e7ab2d3f09b74894d4885d2f5d5/40fad/screenshot4.png 590w,
+/static/a8b10e7ab2d3f09b74894d4885d2f5d5/b3fef/screenshot4.png 885w,
+/static/a8b10e7ab2d3f09b74894d4885d2f5d5/301c0/screenshot4.png 1180w,
+/static/a8b10e7ab2d3f09b74894d4885d2f5d5/97886/screenshot4.png 1194w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;These figures include prize money. “Reviewyour.Website”, “The Cub” and “Posture” have not received any prize money.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It’s safe to say that I won’t be quitting the day job any time soon, but I think making any money at all off a side-project is a massive success regardless of the magnitude. I have three main observations here:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The project with the most views still made no money. I actually didn’t even put ads on the “Blogify 2” site. I felt it was immoral to profit off it.&lt;/li&gt;
+&lt;li&gt;The physical product performed by far the best in terms of dollars-per-view. It was also the most challenging project though and probably took far more effort-per-view than any other project, if you could measure that.&lt;/li&gt;
+&lt;li&gt;Music is hard.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;It’s probably about time to start something new. If I want to maximize the views, revenue and longevity, I should probably try to build a physical product that is a useful tool with a viral aspect, which has nothing to do with music.&lt;/p&gt;
+&lt;p&gt;Easy.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/790790788ac7be90a8b468621b3fb6ff/a8a50/image1.jpeg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEAMQAAABUZUtTMIC/8QAGxAAAQQDAAAAAAAAAAAAAAAAAQIEMTIDETP/2gAIAQEAAQUCbUJGsnRtBld//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFxEAAwEAAAAAAAAAAAAAAAAAARARIf/aAAgBAgEBPwE3F//EABgQAQEAAwAAAAAAAAAAAAAAAAABAhAh/9oACAEBAAY/AnF1kr//xAAcEAEAAgIDAQAAAAAAAAAAAAABABEhMRCBobH/2gAIAQEAAT8hRQyNuZslv2NVd3NffC9E/9oADAMBAAIAAwAAABA0P//EABgRAAIDAAAAAAAAAAAAAAAAAAABESEx/9oACAEDAQE/EKUiw//EABgRAAIDAAAAAAAAAAAAAAAAAAABITFR/9oACAECAQE/EEaGjs//xAAdEAEBAAIBBQAAAAAAAAAAAAABEQAhQTFhocHw/9oACAEBAAE/EEWAaGTphFaqnPzbgqRbmeT644RxZ2x1Xbj/2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;It&apos;s a Simpsons reference.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/790790788ac7be90a8b468621b3fb6ff/f8fb9/image1.jpeg&quot;
+        srcset=&quot;/static/790790788ac7be90a8b468621b3fb6ff/e8976/image1.jpeg 148w,
+/static/790790788ac7be90a8b468621b3fb6ff/63df2/image1.jpeg 295w,
+/static/790790788ac7be90a8b468621b3fb6ff/f8fb9/image1.jpeg 590w,
+/static/790790788ac7be90a8b468621b3fb6ff/85e3d/image1.jpeg 885w,
+/static/790790788ac7be90a8b468621b3fb6ff/d1924/image1.jpeg 1180w,
+/static/790790788ac7be90a8b468621b3fb6ff/a8a50/image1.jpeg 1280w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;</content:encoded></item></channel></rss>
