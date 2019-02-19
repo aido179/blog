@@ -1,6 +1,7 @@
 ---
 title: Vivisection of OpenTable widget.
 date: "2019-02-06T12:46:37.000Z"
+draft: false
 ---
 You may be familiar with OpenTable, a service built around restaurant bookings. One of their main features is an embeddable widget that restaurants can insert in their website to let patrons reserve a table. Here’s what it looks like in the wild:
 

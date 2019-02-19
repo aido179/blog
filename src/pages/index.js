@@ -12,6 +12,8 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
+    console.log(posts)
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -51,7 +53,12 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: {
+        frontmatter: {draft: {ne: true} }
+      }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           excerpt
