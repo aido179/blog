@@ -1,7 +1,7 @@
 ---
 title: The sources of (and solutions to) all of NFTs problems.
 date: "2021-17-06T09:00:00.000Z"
-draft: true
+draft: false
 ---
 
 **Bold Claim:** I've just minted [the first truly physical NFT](https://etherscan.io/token/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7?a=3625).
