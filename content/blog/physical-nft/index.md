@@ -7,3 +7,7 @@ draft: true
 **Bold Claim:** I've just minted [the worlds first truly unique NFT](https://etherscan.io/token/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7?a=3625).
 
 NFTs, 'Nifties', Non-fungible Tokens. As I write this, we are on the tail end of a boom. 
+
+How to turn PHYSICAL artworks into NFTs! [Youtube](https://www.youtube.com/watch?v=99wzZFrPJxc)
+
+NFTs for Physical art [reddit](https://www.reddit.com/r/NFT/comments/m04ec8/nfts_for_physical_art/)
